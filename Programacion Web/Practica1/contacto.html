@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Practica 1</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+	<!--JQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css" />
+		<link rel="stylesheet" href="js/jquery-ui/jquery-ui.structure.min.css" />
+		<link rel="stylesheet" href="js/jquery-ui/jquery-ui.theme.min.css" />
+		<script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+
+
+	<!--Mis Scripts-->
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+	<body>
+
+	<section id="global">
+		<header>
+			<div id="logo">
+				<h1>
+			 		Practica 1 
+				</h1>
+			</div>
+
+			<div class="clearfix"></div> 
+
+			<nav id="menu">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="juegos.html">Juegos</a></li>
+					<li><a href="noticias.html">Noticias</a></li>
+					<li><a href="about.html">Sobre mi</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!--Contenido-->
+		<section id="content">
+
+			<div id="box">
+
+				<!-- Formulario -->
+				<h2>Contacto</h2>
+
+				<form action=""  method="POST" id="form_contact">
+					<label for="name">Nombre</label>
+					<input type="text" name="name"/>
+
+					<label for="surname">Apellidos</label>
+					<input type="text" name="surname"/>
+
+					<label>Email</label>
+					<input type="email" name="email">
+
+					<label for="sex">Sexo</label>
+					<select name="sex">
+						<option value="men">Hombre</option>
+						<option value="woman">Mujer</option>
+					</select>
+					
+					<label for="date">Fecha nacimiento</label>	
+					<input type="text" name="date">	
+
+					<label for="noticias">¿Quieres recibir notificaciones?</label>
+					<label for="noticas">Si</label>
+					<input type="radio" id="noticias" name="envio" value="si">
+               		
+            		<label for="noticias">No</label>
+            		<input type="radio" id="noticias" name="envio" value="no">
+            		
+            		<textarea name="message" rows="10" cols="30">Comentarios...</textarea>
+
+            		<br><br>
+
+            		<label>Que navegador utilizas?</label>
+		            <input list="browsers">
+		            <datalist id="browsers">
+		                <option value="Internet Explorer">
+		                <option value="Firefox">
+		                <option value="Chrome">
+		                <option value="Opera">
+		                <option value="Safari">
+		            </datalist>
+		            <br><br>
+
+					<input type="submit" name="enviar">			
+				</form>
+
+				</div>
+			
+			<aside id="sidebar">
+				<div id="about">
+					<h4><span>¿Quien Soy?</span></h4>
+					<img src="imagenes/descargar.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus ornare nunc, scelerisque volutpat nisi elementum in. Donec pharetra eros ut augue vulputate, in vestibulum mi malesuada</p>
+				</div>		
+
+				<div id="login">
+					<h4><span>Identificate</span></h4>
+					<form>
+						<label for="name">
+							Nombre
+						</label>
+						<input type="text" name="name">
+
+						<label for="email">
+							Correo
+						</label>
+						<input type="text" name="email">
+
+						<label for="password">
+							Contraseña
+						</label>
+						<input type="text" name="password">
+
+						<input type="submit" value="Entrar">
+					</form>
+				</div>
+			</aside>
+
+			<div class="clearfix"></div>
+
+		</section>
+	</section>
+
+	<footer>Practica 1 Noe Isai Gonzalez Para &copy; 
+		
+		<a href="#" class="subir">Ir a inicio</a>
+	</footer>
+
+</body>
+</html>
